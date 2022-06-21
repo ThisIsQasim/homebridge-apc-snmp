@@ -1,31 +1,33 @@
 {
   "name": "homebridge-apc-snmp",
-  "version": "1.0.0",
-  "description": "A homebridge temperature sensor for displaying the weather at your current location.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/werthdavid/homebridge-weather.git"
-  },
-  "engines": {
-    "homebridge": ">=0.2.0",
-    "node": ">=4.2.0"
+  "displayName": "Homebridge APC SNMP",
+  "version": "1.1.0",
+  "dependencies": {
+    "net-snmp": "^3.5.2"
   },
   "keywords": [
     "homebridge-plugin",
-    "weather",
-    "openweathermap"
+    "snmp",
+    "apc",
+    "ups"
   ],
-  "author": "David Werth <werth.david@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/werthdavid/homebridge-weather/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://git.multilan.de/tarek/homebridge-apc-snmp-platform.git"
   },
-  "homepage": "https://github.com/werthdavid/homebridge-weather#readme",
-  "dependencies": {
-"net-snmp": "~1.1.13"  
-}
+  "bugs": {
+    "url": "https://git.multilan.de/tarek/homebridge-apc-snmp-platform.git"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "description": "Homebridge accessory plugin for APC UPS systems",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tarek_multilan",
+  "license": "ISC"
 }
